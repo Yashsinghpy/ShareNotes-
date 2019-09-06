@@ -19,7 +19,7 @@ from socialapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('reg/',views.registration,name='registration'),
+    path('',views.registration,name='registration'),
     path('note/',views.note,name='note'),
     path('login/',views.login,name='login'),
     path('home/',views.home,name='home'),

@@ -29,14 +29,10 @@
 <div class="container-fluid">
 
 <br>
-<h2><center><b>Registration Form<b></center></h2>  
+<h2><center><b>Edit Notes<b></center></h2>  
 <br>
 <br>
-{% if error_message %}
-  <div class="alert alert-danger">
-  <center><strong></strong> {{error_message}}</center>
-</div>
-    {% endif %}
+
 	
 
 <div class="row">
@@ -45,8 +41,8 @@
     <form method="POST" action=".">
         {% csrf_token %}
         {{ form.as_p }}`
-<button type="submit" class="btn btn-warning">Submit</button>
-	<a href="{% url 'login' %}">Login</a>
+<button type="submit" class="btn btn-warning">done</button>
+	
 	
 
 	
